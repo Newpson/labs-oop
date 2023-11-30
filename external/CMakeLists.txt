@@ -1,0 +1,3 @@
+set(IMGUI_BUILD_GLFW_BINDING TRUE)
+set(IMGUI_BUILD_OPENGL3_BINDING TRUE)
+add_subdirectory(imgui)

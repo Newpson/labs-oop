@@ -1,0 +1,11 @@
+add_compile_options(--std=c++20 -W -Wall -Wpedantic -g)
+add_link_options(-fsanitize=address)
+
+add_subdirectory(Point)
+add_subdirectory(Polynomial)
+add_subdirectory(Fraction)
+add_subdirectory(Money)
+add_subdirectory(Pair)
+add_subdirectory(Rational)
+add_subdirectory(Array)
+add_subdirectory(List)
