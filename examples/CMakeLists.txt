@@ -17,11 +17,13 @@ target_link_libraries(fraction
 	PUBLIC Fraction)
 
 find_package(OpenGL)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(GLFW REQUIRED glfw3)
 add_executable(money)
 target_sources(money
 	PRIVATE money.cpp)
 target_link_libraries(money
-	PUBLIC Money imgui OpenGL::GL)
+	PUBLIC Money imgui OpenGL::GL ${GLFW_LIBRARIES})
 
 add_executable(rational)
 target_sources(rational
